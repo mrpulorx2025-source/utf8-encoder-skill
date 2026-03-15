@@ -1,0 +1,37 @@
+{
+  "name": "utf8-encoder-tool",
+  "version": "1.0.0",
+  "description": "UTF-8编码工具 - 解决多平台中文乱码问题，支持Discord、GitHub、Reddit等平台",
+  "main": "utf8-encoder.js",
+  "bin": {
+    "utf8-encoder": "./cli.js"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "start": "node cli.js"
+  },
+  "keywords": [
+    "utf8",
+    "encoding",
+    "chinese",
+    "discord",
+    "github",
+    "webhook",
+    "api"
+  ],
+  "author": "丞相",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrpulorx2025-source/utf8-encoder-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrpulorx2025-source/utf8-encoder-skill/issues"
+  },
+  "homepage": "https://github.com/mrpulorx2025-source/utf8-encoder-skill#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
