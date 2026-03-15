@@ -4,7 +4,7 @@
  * 运行核心功能测试，不依赖外部API
  */
 
-const UTF8Encoder = require('./utf8-encoder');
+const { UTF8Encoder } = require('./utf8-encoder');
 const encoder = new UTF8Encoder();
 const fs = require('fs');
 const path = require('path');

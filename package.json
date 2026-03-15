@@ -1,23 +1,28 @@
 {
   "name": "utf8-encoder-tool",
-  "version": "1.0.0",
-  "description": "UTF-8编码工具 - 解决多平台中文乱码问题，支持Discord、GitHub、Reddit等平台",
+  "version": "2.0.0",
+  "description": "UTF-8发布基础设施 - 自动处理多平台中文编码问题，集成防卡顿策略，支持Discord、GitHub等平台",
   "main": "utf8-encoder.js",
   "bin": {
     "utf8-encoder": "./cli.js"
   },
   "scripts": {
     "test": "node test.js",
-    "start": "node cli.js"
+    "integration-test": "node integration-test.js",
+    "start": "node cli.js",
+    "infrastructure-demo": "node -e \"const {UTF8Infrastructure}=require('./utf8-encoder');const i=new UTF8Infrastructure();console.log('🏛️ UTF-8发布基础设施 v2.0.0');console.log(JSON.stringify(i.getInfrastructureStatus(),null,2));\""
   },
   "keywords": [
     "utf8",
     "encoding",
+    "infrastructure",
     "chinese",
     "discord",
     "github",
     "webhook",
-    "api"
+    "api",
+    "resilience",
+    "retry"
   ],
   "author": "丞相",
   "license": "MIT",
